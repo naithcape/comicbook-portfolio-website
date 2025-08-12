@@ -22,7 +22,7 @@ export function Counter() {
     <div className="flex flex-col gap-8 justify-center items-center">
       <button type="button" onclick={handleClick} className="cursor-pointer ">
         <img
-          src="/favicon.svg"
+          src="/favicon.ico"
           className="w-32 h-32 animate-pulse"
           alt="kiru logo"
         />

@@ -1,19 +1,13 @@
 import { useSignal } from "kiru"
 
-// Helper function to safely check if we're in a browser environment
 const isBrowser = () => typeof window !== 'undefined' && typeof document !== 'undefined'
-
-// Helper to get initial theme (only called in browser)
 const getInitialTheme = (): 'light' | 'dark' => {
-  if (!isBrowser()) return 'light' // Default for SSR
+  if (!isBrowser()) return 'light'
   return document.documentElement.classList.contains('dark') ? 'dark' : 'light'
 }
 
 export function ThemeToggleButton() {
-  // Use a default theme for server-side rendering
   const theme = useSignal<'light' | 'dark'>(getInitialTheme())
-
-  // Initialize theme on first render if in browser
   if (isBrowser() && theme.value !== getInitialTheme()) {
     theme.value = getInitialTheme()
   }
@@ -28,7 +22,6 @@ export function ThemeToggleButton() {
     try {
       localStorage.setItem('theme', t)
     } catch (e) {
-      // Handle localStorage not being available
       console.warn('Could not save theme preference', e)
     }
     

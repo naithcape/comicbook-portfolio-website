@@ -1,92 +1,100 @@
 export function Page() {
   return (
-    <>
-      <section className="mb-8">
-        <p className="kicker mb-2">Additional</p>
-        <h1 className="headline text-4xl md:text-5xl mb-1">Resources</h1>
-        <p className="byline">Tools, links, and references</p>
-        <hr className="rule my-3" />
-      </section>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <article className="lg:col-span-8">
+    <div>
+      <h2 className="title mb-6">Resources</h2>
+      <p className="subtitle mb-4">Tools, links, and references</p>
+      
+      <div className="comic-grid mb-8">
+        <div className="panel panel-1">
           <img
-            className="w-full aspect-[16/9] object-cover border border-[#e6e1d8] news-img mb-4"
+            className="panel-img w-full aspect-[16/9] object-cover mb-4"
             src="https://images.pexels.com/photos/1117153/pexels-photo-1117153.jpeg"
             alt="Workspace with tools"
             loading="lazy"
           />
-          <p className="lead drop-cap mb-3 hyphens-auto">
-            Curated links and tools I return to when building, learning, and shipping. Practical, lightweight, and well‑documented
-            resources beat novelty nine times out of ten.
-          </p>
-
-          <section className="mt-6">
-            <p className="section-label mb-2">Tooling</p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>TypeScript — strong types, clear contracts, safer refactors.</li>
-              <li>Vite — fast dev server and sensible build defaults.</li>
-              <li>Tailwind — utility‑first styling with consistency and speed.</li>
-              <li>ESLint & Prettier — keep style and quality automatic.</li>
-            </ul>
-          </section>
-
-          <section className="mt-6">
-            <p className="section-label mb-2">Learning</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <article>
-                <h3 className="font-semibold mb-1">Systems & Architecture</h3>
-                <ul className="list-disc list-inside text-sm space-y-1">
-                  <li><a href="https://martinfowler.com/" target="_blank" rel="noreferrer">Martin Fowler</a></li>
-                  <li><a href="https://aws.amazon.com/builders-library/" target="_blank" rel="noreferrer">AWS Builders' Library</a></li>
-                </ul>
-              </article>
-              <article>
-                <h3 className="font-semibold mb-1">Web Fundamentals</h3>
-                <ul className="list-disc list-inside text-sm space-y-1">
-                  <li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN Web Docs</a></li>
-                  <li><a href="https://web.dev/" target="_blank" rel="noreferrer">web.dev</a></li>
-                </ul>
-              </article>
+          <div className="speech-bubble">
+            <p>Curated links and tools I return to when building, learning, and shipping. Practical, lightweight, and well‑documented
+            resources beat novelty nine times out of ten.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="comic-grid mb-8">
+        <div className="panel panel-2 comic-effect-zoom">
+          <h3 className="font-bold mb-2">Tooling</h3>
+          <ul className="list-disc list-inside space-y-1 pl-2">
+            <li>TypeScript — strong types, clear contracts, safer refactors.</li>
+            <li>Vite — fast dev server and sensible build defaults.</li>
+            <li>Tailwind — utility‑first styling with consistency and speed.</li>
+            <li>ESLint & Prettier — keep style and quality automatic.</li>
+          </ul>
+        </div>
+        
+        <div className="panel panel-2">
+          <h3 className="font-bold mb-2">Learning</h3>
+          <div className="grid grid-cols-1 gap-4">
+            <div className="panel-tall custom-box">
+              <h4 className="font-semibold mb-1">Systems & Architecture</h4>
+              <ul className="list-disc list-inside text-sm space-y-1 pl-2">
+                <li><a href="https://martinfowler.com/" target="_blank" rel="noreferrer">Martin Fowler</a></li>
+                <li><a href="https://aws.amazon.com/builders-library/" target="_blank" rel="noreferrer">AWS Builders' Library</a></li>
+              </ul>
             </div>
-          </section>
-
-          <section className="mt-6">
-            <p className="section-label mb-2">References</p>
-            <div className="news-columns">
-              <p>Prefer canonical docs and small examples. When evaluating a new tool, look for a quickstart, a migration guide, and a
-                clear statement of scope. If those are missing, reconsider.</p>
-              <p>Keep private notes on gotchas and defaults. The real speedup is avoiding the same pitfalls twice.</p>
+            <div className="panel-tall custom-box">
+              <h4 className="font-semibold mb-1">Web Fundamentals</h4>
+              <ul className="list-disc list-inside text-sm space-y-1 pl-2">
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN Web Docs</a></li>
+                <li><a href="https://web.dev/" target="_blank" rel="noreferrer">web.dev</a></li>
+              </ul>
             </div>
-          </section>
-
-        </article>
-
-        <aside className="lg:col-span-4">
-          <p className="section-label mb-3">Handy Links</p>
-          <ul className="list-disc list-inside text-sm space-y-1">
+          </div>
+        </div>
+      </div>
+      
+      <div className="comic-grid mb-8">
+        <div className="panel panel-2 comic-effect-action">
+          <h3 className="font-bold mb-2">References</h3>
+          <div className="mb-4">
+            <p>Prefer canonical docs and small examples. When evaluating a new tool, look for a quickstart, a migration guide, and a
+            clear statement of scope. If those are missing, reconsider.</p>
+          </div>
+          <div className="speech-bubble speech-bubble-right">
+            <p>Keep private notes on gotchas and defaults. The real speedup is avoiding the same pitfalls twice.</p>
+          </div>
+        </div>
+        
+        <div className="panel panel-2">
+          <h3 className="font-bold mb-2">Handy Links</h3>
+          <ul className="list-disc list-inside text-sm space-y-1 pl-2">
             <li><a href="https://regex101.com/" target="_blank" rel="noreferrer">Regex101</a></li>
             <li><a href="https://caniuse.com/" target="_blank" rel="noreferrer">Can I Use</a></li>
             <li><a href="https://transform.tools/" target="_blank" rel="noreferrer">transform.tools</a></li>
           </ul>
-
-          <hr className="rule my-4" />
-
-          <p className="section-label mb-2">Starter Kits</p>
-          <ul className="list-disc list-inside text-sm space-y-1">
+        </div>
+      </div>
+      
+      <div className="comic-grid">
+        <div className="panel panel-2">
+          <h3 className="font-bold mb-2">Starter Kits</h3>
+          <ul className="list-disc list-inside text-sm space-y-1 pl-2">
             <li>SPA template with TypeScript and Tailwind</li>
             <li>API server with sensible defaults</li>
           </ul>
-
-          <hr className="rule my-4" />
-
-          <p className="section-label mb-2">Cheatsheets</p>
-          <ul className="list-disc list-inside text-sm space-y-1">
+        </div>
+        
+        <div className="panel panel-2 comic-effect-zoom">
+          <h3 className="font-bold mb-2">Cheatsheets</h3>
+          <ul className="list-disc list-inside text-sm space-y-1 pl-2">
             <li>HTTP status codes at a glance</li>
             <li>Keyboard shortcuts for your editor</li>
             <li>A11y color contrast quickcheck</li>
           </ul>
-        </aside>
+        </div>
       </div>
-    </>
+      
+      <div className="mt-8 text-center">
+        <p className="font-bold comic-effect-action">Tools are only as good as the craftsperson using them!</p>
+      </div>
+    </div>
   )
 }
