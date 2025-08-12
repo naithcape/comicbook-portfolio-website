@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e705cf94-ba57-491a-a77d-d9ccd0b0fa4d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/screenshots/screencapture-localhost-3000-2025-08-12-06_33_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/screencapture-localhost-3000-2025-08-12-06_33_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/screencapture-localhost-3000-2025-08-12-06_33_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/screencapture-localhost-3000-2025-08-12-06_33_34.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/favicon.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/vike.svg" beforeDir="false" />
@@ -78,6 +83,8 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -95,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754955722929</updated>
-      <workItem from="1754955723651" duration="17219000" />
+      <workItem from="1754955723651" duration="17557000" />
     </task>
     <servers />
   </component>

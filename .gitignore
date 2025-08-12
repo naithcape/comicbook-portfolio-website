@@ -2,5 +2,5 @@ node_modules
 dist
 pnpm-lock.yaml
 .vscode
-.
+.idea
 package-lock.json
